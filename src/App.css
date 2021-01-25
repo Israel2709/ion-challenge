@@ -10934,6 +10934,7 @@ html {
 .blue-gradient {
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#ECF7FB));
   background-image: linear-gradient(to bottom, white, #ECF7FB);
+  min-height: 100vh;
 }
 
 header {
