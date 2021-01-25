@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+$spacer: .75rem;
+$theme-colors: (
+  "primary": #5acaee,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$outline-dark-blue:      #1b3c59;
+$outline-light-blue:     #1ca1cb;
+$purple:                 #783183;
+$light-purple:           #bb64c8;
+$light-blue:             #5acaee;
+
+*{
+    font-family:'Open Sans', sans-serif
+}
+
+*[class*="icon"]{
+    width:24px;
+    height:24px;
+    background-color:$outline-dark-blue;
+    &:hover,&:active{
+        background-color:$outline-light-blue;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.icon-{
+    &home{
+        mask:url("assets/icons/home.svg");
+    }
+    &bell{
+        mask:url("assets/icons/bell.svg"); 
+    }
+    &credit-card{
+        mask:url("assets/icons/credit-card.svg"); 
+    }
+    &money-bag{
+        mask:url("assets/icons/money-bag.svg"); 
+    }
+    &star{
+        mask:url("assets/icons/star.svg"); 
+    }
+    &tag{
+        mask:url("assets/icons/tag.svg"); 
+    }
+    &arrow-left{
+        background-color:#333;
+        mask:url("assets/icons/arrow-left.svg"); 
+    }
+}
+
+.text-{
+    &light-purple{
+        color:$light-purple
+    }
+    &light-blue{
+        color:$light-blue
+    }
+}
+
+.has-nav{
+    padding-bottom:60px;
+}
+
+.bottom-nav{
+    padding:20px 2rem;
+    background:white;
+    box-shadow:0 -10px 20px 10px white;
+    height:60px;
+    border-radius:10px 10px 0 0;
+    border:1px solid rgba(9, 22, 31, 0.3);
+    border-bottom:none;
+}
+
+.card{
+    box-shadow: 0 1px 9px 0 rgba(56, 56, 56, 0.2);
+    border-radius:4px;
+    .card-title{
+        font-size:.875rem;
+        font-weight:600;
+    }
+    .card-text{
+        font-size:1.75rem;
+        font-weight:600;
+    }
+}
+
+header{
+  height: 142px;
+  background-image: linear-gradient(to bottom, white, #ECF7FB);
+  .user-name{
+      font-weight: 600;
+  }
+  .user-avatar{
+      width:25px;
+      position: absolute;
+      right:1.25rem;
+      top:0;
+  }
+  .card{
+      position: absolute;
+      width:calc( 100% - 4.5rem );
+      bottom:-12.5%;
+      left:2.25rem;
+      z-index:9999;
+      .card-text{
+          line-height: 1.18;
+      }
+  }
+}
+
+nav{
+    height:116px;
+    background-color:$purple;
+    padding:.75rem 2.25rem;
+    .card{
+        position: absolute;
+        width: calc(100% - 4.5rem);
+        left: 2.25rem;
+        top: 85.5%;
+        .info-wrapper{
+            .info-item{
+                padding-left:1rem;
+                position:relative;
+                margin-bottom:.5rem;
+                &:before{
+                    content:"";
+                    width:12px;
+                    height:12px;
+                    position: absolute;
+                    background-color:$light-blue;
+                    
+                    left:0;
+                    display:block;
+                }
+                &.money-bag{
+                    &:before{
+                        mask: url("assets/icons/money-bag.svg");
+                        mask-size: 100%;
+                    }
+                }
+                &.credit-card{
+                    &:before{
+                        mask: url("assets/icons/credit-card.svg");
+                        mask-size: 100%;
+                    }
+                }
+                &:last-child{
+                    margin-bottom:0;
+                }
+            }
+        }
+    }
+    .link-wrapper{
+        .link-item{
+            img{
+                width:20px;
+                margin:0 auto .5rem;
+            }
+            span{
+                font-size:.5rem;
+                color:white;
+                font-weight:600;
+            }
+        }
+    } 
+}
+
+.payment-data{
+    font-size:.875rem;
+    font-weight:600;
+    b{
+        font-size:1.125rem;
+    }
+}
+
+.movements-wrapper{
+    padding-top:200px;
+    h2{
+        font-size:1.5rem;
+        font-weight:600;
+        a{
+            font-size:1rem;
+        }
+    }
+    .table{
+        tr{
+            td{
+                vertical-align: middle;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+            td:first-of-type{
+                text-align: center;
+            }
+        }
+        img{
+            width:45px;
+        }
+    }
+}
+
+.custom-label{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    p{
+        font-size:$spacer;
+        margin-bottom: $spacer;
+        
+    }
+    .monthly-payment{
+        font-size:1.5rem
+    }
+}

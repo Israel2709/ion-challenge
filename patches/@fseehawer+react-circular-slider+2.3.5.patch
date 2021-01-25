@@ -1,0 +1,23 @@
+diff --git a/node_modules/@fseehawer/react-circular-slider/src/Knob/index.js b/node_modules/@fseehawer/react-circular-slider/src/Knob/index.js
+index 934ecff..3818d43 100644
+--- a/node_modules/@fseehawer/react-circular-slider/src/Knob/index.js
++++ b/node_modules/@fseehawer/react-circular-slider/src/Knob/index.js
+@@ -48,9 +48,7 @@ const Knob = ({
+ 				width={`${knobSize}px`}
+ 				height={`${knobSize}px`}
+ 				viewBox={`0 0 36 36`}>
+-				<rect fill='#FFFFFF' x='14' y='14' width='8' height='1' />
+-				<rect fill='#FFFFFF' x='14' y='17' width='8' height='1' />
+-				<rect fill='#FFFFFF' x='14' y='20' width='8' height='1' />
++				
+ 			</svg>
+ 		);
+ 	};
+@@ -74,7 +72,6 @@ const Knob = ({
+ 				<circle
+ 					style={{ ...styles.animation, ...(isDragging && styles.pause) }}
+ 					fill={knobColor}
+-					fillOpacity='0.2'
+ 					stroke='none'
+ 					cx={knobSize / 2}
+ 					cy={knobSize / 2}
