@@ -10931,6 +10931,11 @@ html {
   font-weight: 600;
 }
 
+.blue-gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#ECF7FB));
+  background-image: linear-gradient(to bottom, white, #ECF7FB);
+}
+
 header {
   height: 142px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#ECF7FB));
@@ -10981,8 +10986,8 @@ nav .card .info-wrapper .info-item {
 
 nav .card .info-wrapper .info-item:before {
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   position: absolute;
   background-color: #5acaee;
   left: 0;
@@ -11013,7 +11018,7 @@ nav .link-wrapper .link-item img {
 }
 
 nav .link-wrapper .link-item span {
-  font-size: .5rem;
+  font-size: .75rem;
   color: white;
   font-weight: 600;
 }

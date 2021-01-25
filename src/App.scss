@@ -91,6 +91,10 @@ html {
     }
 }
 
+.blue-gradient{
+    background-image: linear-gradient(to bottom, white, #ECF7FB);
+}
+
 header{
   height: 142px;
   background-image: linear-gradient(to bottom, white, #ECF7FB);
@@ -131,11 +135,10 @@ nav{
                 margin-bottom:.5rem;
                 &:before{
                     content:"";
-                    width:12px;
-                    height:12px;
+                    width:14px;
+                    height:14px;
                     position: absolute;
                     background-color:$light-blue;
-                    
                     left:0;
                     display:block;
                 }
@@ -164,7 +167,7 @@ nav{
                 margin:0 auto .5rem;
             }
             span{
-                font-size:.5rem;
+                font-size:.75rem;
                 color:white;
                 font-weight:600;
             }

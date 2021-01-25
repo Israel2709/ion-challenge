@@ -35,8 +35,8 @@ function Available() {
     const monthlyPayment = (( totalAmount * 1.166 ) / term).toFixed(2)
 
     return (
-        <>
-            <div className="controls-wrapper d-flex justify-content-between align-items-center p-5">
+        <div class="blue-gradient">
+            <div className="controls-wrapper d-flex justify-content-between align-items-center p-4">
                 <Link to="/" className="icon-arrow-left"></Link>
                 <Link to="/" className="text-uppercase text-light-blue">cancelar</Link>
             </div>
@@ -115,7 +115,7 @@ function Available() {
                     </Col>
                 </Row>
             </Container>
-        </>
+        </div>
     )
 }
 
